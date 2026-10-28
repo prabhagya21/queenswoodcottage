@@ -10660,3 +10660,31 @@ input:focus, input:focus-visible {
 @media (max-width: 575px) {
     .header .logo img { height: 48px !important; }
 }
+
+/* ===== Queenswood Cottage: "Follow Us" cards - keep the original portrait shape so the vertical title fits ===== */
+.offer-wrapper img {
+    width: 100%;
+    aspect-ratio: 450 / 501;
+    object-fit: cover;
+}
+
+/* ===== Queenswood Cottage: testimonial avatar - fixed size, quote icon moved off the face ===== */
+.testimonial-thumb img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+.testimonial-thumb > .position-absolute {
+    inset-block-start: auto !important;
+    inset-inline-start: auto !important;
+    top: auto !important;
+    left: auto !important;
+    bottom: -14px;
+    right: -14px;
+    margin: 0 !important;
+}
+.testimonial-thumb > .position-absolute span {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 22px !important;
+}

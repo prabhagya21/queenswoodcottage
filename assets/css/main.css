@@ -10632,33 +10632,29 @@ input:focus, input:focus-visible {
 
 /* ===== Queenswood Cottage: logo + header size fix ===== */
 .header .logo img {
-    height: 60px !important;
+    height: 84px !important;
     width: auto !important;
     max-width: none !important;
-    filter: none !important;
-    background: #fff;
-    padding: 6px 12px;
-    border-radius: 10px;
+    filter: drop-shadow(0 1px 6px rgba(255, 255, 255, .55)) !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
 }
 .footer-bottom-wrap > div.mb-0 img {
-    height: 70px !important;
+    height: 44px !important;
     width: auto !important;
     max-width: none !important;
     filter: none !important;
-    background: #fff;
-    padding: 6px 12px;
-    border-radius: 10px;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
 }
 .mobile-menu__logo img {
     height: 56px;
     width: auto;
 }
-.search_wrapper .search_top .search_logo a img {
-    height: 56px;
-    width: auto;
-}
 @media (max-width: 575px) {
-    .header .logo img { height: 48px !important; }
+    .header .logo img { height: 60px !important; }
 }
 
 /* ===== Queenswood Cottage: "Follow Us" cards - keep the original portrait shape so the vertical title fits ===== */
@@ -10687,4 +10683,176 @@ input:focus, input:focus-visible {
     width: 44px !important;
     height: 44px !important;
     font-size: 22px !important;
+}
+
+
+/* =====================================================================
+   Queenswood Cottage - layout fixes (round 2)
+   ===================================================================== */
+
+/* ---- Hero slideshow (4 images, cross-fade, pure CSS) ---- */
+.banner-area { overflow: hidden; }
+.banner-area::before { z-index: 1; }
+.banner-area > .container { position: relative; z-index: 2; }
+.hero-slides { position: absolute; inset: 0; z-index: 0; }
+.hero-slide {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center; background-repeat: no-repeat;
+    opacity: 0;
+    animation: heroFade 24s infinite;
+    transform: scale(1.04);
+}
+.hero-slide:nth-child(1) { animation-delay: 0s; }
+.hero-slide:nth-child(2) { animation-delay: 6s; }
+.hero-slide:nth-child(3) { animation-delay: 12s; }
+.hero-slide:nth-child(4) { animation-delay: 18s; }
+@keyframes heroFade {
+    0%   { opacity: 0; transform: scale(1.04); }
+    5%   { opacity: 1; }
+    25%  { opacity: 1; }
+    30%  { opacity: 0; transform: scale(1.12); }
+    100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide { animation: none; }
+    .hero-slide:first-child { opacity: 1; }
+}
+
+/* ---- Welcome paragraph: smaller text ---- */
+.section-title.section-title--sm {
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+@media screen and (max-width: 767px) {
+    .section-title.section-title--sm { font-size: 22px; }
+}
+
+/* ---- Cottage Rooms / Restaurant / Pool / Bike / Winter cards ---- */
+.advance-wrap { --advance-ratio: 4 / 5; }
+.advance-thumb { position: relative; overflow: hidden; border-radius: 17px; cursor: pointer; outline: none; }
+.advance-thumb img {
+    display: block; width: 100%;
+    aspect-ratio: var(--advance-ratio);
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+.advance-thumb:hover img,
+.advance-thumb.is-open img { transform: scale(1.06); }
+.advance-info {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 18px 16px;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.82) 100%);
+    opacity: 0; transform: translateY(12px);
+    transition: opacity .35s ease, transform .35s ease;
+    pointer-events: none;
+    border-radius: 17px;
+}
+.advance-info h6 { color: #fff; font-size: 20px; margin: 0 0 6px; }
+.advance-info p  { color: #fff; font-size: 14px; line-height: 1.4; margin: 0 0 8px; }
+.advance-info span { color: #ffc765; font-size: 13px; line-height: 1.5; }
+.advance-thumb:hover .advance-info,
+.advance-thumb:focus-within .advance-info,
+.advance-thumb:focus .advance-info,
+.advance-thumb.is-open .advance-info { opacity: 1; transform: none; }
+
+/* ---- Cozy Mountain Retreat card: image fills its frame ---- */
+.package-wrapper { align-items: stretch; }
+.package-wrapper > .package-thumb { flex: 1 1 0; min-width: 0; min-height: 420px; margin-bottom: 0 !important; }
+.package-wrapper > .tw_fade_anim { flex: 2 1 0; min-width: 0; }
+.package-thumb > a { display: block; height: 100%; }
+.package-thumb img { display: block; width: 100%; height: 100%; min-height: 100%; object-fit: cover; }
+.package-wrap .package-thumb { flex: 1 1 0; min-width: 0; min-height: 300px; }
+@media screen and (max-width: 1199px) {
+    .package-wrapper > .package-thumb,
+    .package-wrapper > .tw_fade_anim { flex: 1 1 100%; }
+    .package-wrapper > .package-thumb { min-height: 360px; }
+}
+
+/* ---- Queenswood Restaurant: two photos + 3 column list ---- */
+.about-thumb { padding-bottom: 90px; }
+.about-thumb .about-thumb-1 img {
+    width: 78%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 18px;
+}
+.about-thumb .about-thumb-2 {
+    inset-block-start: auto; inset-block-end: 0; inset-inline-end: 0; width: 56%;
+}
+.about-thumb .about-thumb-2 img {
+    width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block;
+    border-radius: 18px; border: 6px solid #fff; box-shadow: 0 14px 34px rgba(0,0,0,.18);
+}
+@media screen and (max-width: 1199px) {
+    .about-thumb { margin-block-end: 0; }
+}
+.about-list-row { --bs-gutter-x: 14px; }
+.about-list-row .about-list { max-width: none; }
+.about-list-row .about-list li {
+    display: flex !important; width: 100%;
+    font-size: 14px; line-height: 1.35; font-weight: 600;
+    padding-block: 10px !important; padding-inline: 14px 12px !important;
+    margin-bottom: 12px !important; gap: 8px !important;
+}
+.about-list-row .about-list li > span { font-size: 20px !important; flex: 0 0 auto; }
+
+/* ---- Restaurant CTA: keep the people in the photo visible ---- */
+.cta-area.cta-people {
+    min-height: 560px;
+    padding: 0 !important;
+    display: flex; align-items: flex-end;
+    background-size: cover; background-position: center 25%; background-repeat: no-repeat;
+}
+.cta-area.cta-people::before {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,.78) 100%);
+}
+.cta-area.cta-people > .container-fluid { padding-block: 0 40px; }
+.cta-area.cta-people .cta-title { font-size: 48px; margin-bottom: 10px !important; }
+.cta-area.cta-people p { margin-bottom: 18px !important; font-size: 17px; }
+@media screen and (max-width: 767px) {
+    .cta-area.cta-people { min-height: 440px; }
+    .cta-area.cta-people .cta-title { font-size: 34px; }
+}
+
+/* ---- Our Rooms: every card the same size ---- */
+.service-active .swiper-wrapper { align-items: stretch; }
+.service-active .service-wrapper {
+    height: auto; display: flex; flex-direction: column; margin-bottom: 0 !important;
+}
+.service-active .service-thumb > a { display: block; }
+.service-active .service-thumb img {
+    width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block;
+}
+.service-active .service-content { flex: 1 1 auto; display: flex; flex-direction: column; }
+.service-active .service-title {
+    min-height: 2.4em; line-height: 1.2;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.service-active .service-paragraph {
+    min-height: 4.5em;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.service-active .service-wrap { margin-top: auto; }
+
+/* ---- Footer: compact ---- */
+.footer .cursor-content { padding-top: 40px !important; padding-bottom: 24px !important; }
+.footer .cursor-text { font-size: 32px !important; line-height: 1.2; }
+.footer-center-space { padding: 0 0 24px; }
+.footer-center-border { padding-block-start: 28px; }
+.footer-center-border .row { --bs-gutter-y: 1rem; }
+.footer-center-border h4 { font-size: 18px !important; margin-bottom: 12px !important; }
+.footer-center-border h4 a { font-size: 16px; }
+.footer-center-border p, .footer-center-border li, .footer-center-border li a { font-size: 14px; line-height: 1.5; }
+.footer-center-border ul { gap: 6px !important; }
+.footer-bottom { padding-block: 12px !important; }
+.footer-bottom-wrap {
+    display: grid !important; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px !important;
+}
+.footer-bottom-wrap > div.mb-0 { order: 1; justify-self: start; }
+.footer-bottom-wrap > p { order: 2; margin: 0; text-align: center; font-size: 13px !important; }
+.footer-bottom-wrap > ul.footer-bottom-social { order: 3; justify-self: end; }
+@media screen and (max-width: 991px) {
+    .footer-bottom-wrap { grid-template-columns: 1fr; justify-items: center; }
+    .footer-bottom-wrap > * { justify-self: center !important; }
+    .footer-bottom-wrap > p { order: 3; }
 }

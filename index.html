@@ -82,48 +82,6 @@
     <!--==================== Preloader End ====================-->
 
 
-    <!-- Search Popup Start -->
-    <div class="search_popup">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-12">
-                    <div class="search_wrapper">
-                        <div class="search_top d-flex justify-content-between align-items-center">
-                            <div class="search_logo">
-                                <a href="index.html">
-                                    <img src="https://queenswoodcottage.com/img/assets/logo-black%20%281%29.webp" alt="Queenswood Cottage">
-                                </a>
-                            </div>
-                            <div class="search_close">
-                                <button type="button" class="search_close_btn">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="search_form">
-                            <form action="#">
-                                <div class="search_input">
-                                    <input class="search-input-field" type="text" placeholder="Type here to search...">
-                                    <span class="search-focus-border"></span>
-                                    <button type="submit">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="search-popup-overlay"></div>
-    <!-- Search Popup End-->
 
 
     <!--==================== mouse cursor drag start ====================-->
@@ -263,11 +221,6 @@
                             <span><img src="assets/images/icons/cart.svg" alt="cart"></span>
                         </button>
                     </div>
-                    <div>
-                        <button class="open-search text-white" aria-label="search products" title="open search box">
-                            <span class="tw-text-3xl"><i class="ph ph-magnifying-glass"></i></span>
-                        </button>
-                    </div>
                 </div>
 
                 <div class="header-button">
@@ -284,7 +237,14 @@
 </header>
 <!-- ==================== Header End Here ==================== -->
 <div id="scrollSmoother-container">
-    <section class="banner-area background-img position-relative z-1" data-background-image="https://queenswoodcottage.com/img/assets/him1.jpeg">
+    <section class="banner-area position-relative z-1">
+    <!-- Hero slideshow (4 images). Change the URLs below to swap pictures. -->
+    <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/him1.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/118227999.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/214100295.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/809106812.jpg')"></div>
+    </div>
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-xl-8 col-lg-8">
@@ -311,14 +271,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3">
-                <div class="banner-play-button d-flex justify-content-end">
-                    <a class="play-now-two play-button" href="https://www.facebook.com/share/v/1AafDVpzuY/" target="_blank" rel="noopener" onclick="event.stopImmediatePropagation(); window.open(this.href, '_blank', 'noopener'); return false;">
-                        <i class="ph-bold ph-play"></i>
-                        <span class="ripple"></span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -394,7 +346,7 @@
                <div class="col-xl-11"> 
                     <div class="section-wrapper text-center tw-mb-14 tw_fade_anim">
                          <h6 class="section-subtitle tw-text-xl fw-medium text-uppercase tw-mb-4 text-main-600">Welcome To Queenswood Cottage</h6>
-                         <h2 class="section-title fw-normal tw-mb-7 tw-char-animation">Discover a world of comfort, luxury, and unparalleled hospitality at Queenswood Cottage. Nestled in the heart of the city, our exquisite cottage is your home away from home, where every stay is a memorable experience.</h2>
+                         <h2 class="section-title section-title--sm fw-normal tw-mb-7 tw-char-animation">Discover a world of comfort, luxury, and unparalleled hospitality at Queenswood Cottage. Nestled in the heart of the city, our exquisite cottage is your home away from home, where every stay is a memorable experience.</h2>
                     </div>
                </div>
             </div>
@@ -404,8 +356,9 @@
       
                      <!-- item 1 -->
                      <div class="advance-item">
-                        <div class="advance-thumb">
+                        <div class="advance-thumb" tabindex="0">
                            <img src="https://queenswoodcottage.com/img/assets/809106812.jpg" alt="Cottage Rooms">
+                        <div class="advance-info"><h6>Cottage Rooms</h6><p>Cosy cottage-style rooms with free Wi-Fi and 24-hour reception.</p><span>From $65 / night</span></div>
                         </div>
                         <div class="advance-content d-flex align-items-center justify-content-between flex-wrap tw-px-4 tw-py-4">
                            <h6 class="tw-text-2xl fw-normal mb-0"><a href="#rooms">Cottage Rooms</a></h6>
@@ -415,8 +368,9 @@
                      
                      <!-- item 2 -->
                      <div class="advance-item">
-                        <div class="advance-thumb">
+                        <div class="advance-thumb" tabindex="0">
                            <img src="https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%282%29.jpg" alt="Restaurant">
+                        <div class="advance-info"><h6>Restaurant</h6><p>Western and local cuisine.</p><span>Breakfast 7:30-10:30 AM · Lunch 12:00-2:30 PM · Dinner 6:00-9:00 PM</span></div>
                         </div>
                         <div class="advance-content d-flex align-items-center justify-content-between flex-wrap tw-px-4 tw-py-4">
                            <h6 class="tw-text-2xl fw-normal mb-0"><a href="#restaurant">Restaurant</a></h6>
@@ -426,8 +380,9 @@
       
                      <!-- item 3 -->
                      <div class="advance-item">
-                        <div class="advance-thumb">
+                        <div class="advance-thumb" tabindex="0">
                            <img src="https://queenswoodcottage.com/img/assets/pool.jpg" alt="Pool Table">
+                        <div class="advance-info"><h6>Pool Table</h6><p>Games room with a pool table.</p><span>Open 4:00 PM - 11:00 PM · Complimentary for guests</span></div>
                         </div>
                         <div class="advance-content d-flex align-items-center justify-content-between flex-wrap tw-px-4 tw-py-4">
                            <h6 class="tw-text-2xl fw-normal mb-0"><a href="#amenities">Pool Table</a></h6>
@@ -437,8 +392,9 @@
       
                      <!-- item 4 -->
                      <div class="advance-item">
-                        <div class="advance-thumb">
+                        <div class="advance-thumb" tabindex="0">
                            <img src="https://queenswoodcottage.com/img/assets/bike.jpg" alt="Bike Rentals">
+                        <div class="advance-info"><h6>Bike Rentals</h6><p>Bike &amp; bicycle rentals to explore the mountains.</p><span>Hourly &amp; daily rates · Helmets &amp; maps provided</span></div>
                         </div>
                         <div class="advance-content d-flex align-items-center justify-content-between flex-wrap tw-px-4 tw-py-4">
                            <h6 class="tw-text-2xl fw-normal mb-0"><a href="#amenities">Bike Rentals</a></h6>
@@ -448,8 +404,9 @@
       
                      <!-- item 5 -->
                      <div class="advance-item">
-                        <div class="advance-thumb">
+                        <div class="advance-thumb" tabindex="0">
                            <img src="https://queenswoodcottage.com/img/assets/809106415.jpg" alt="Winter Shop">
+                        <div class="advance-info"><h6>Winter Shop</h6><p>Winter wear &amp; gear shop.</p><span>Open seasonally · Guest discounts available</span></div>
                         </div>
                         <div class="advance-content d-flex align-items-center justify-content-between flex-wrap tw-px-4 tw-py-4">
                            <h6 class="tw-text-2xl fw-normal mb-0"><a href="#amenities">Winter Shop</a></h6>
@@ -757,11 +714,11 @@
         <div class="row">
             <div class="col-xl-5 col-lg-8">
                 <div class="about-thumb position-relative z-1 tw_fade_anim" data-delay=".3">
-                    <div>
+                    <div class="about-thumb-1">
                         <img src="https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%282%29.jpg" alt="Queenswood Restaurant">
                     </div>
-                    <div class="about-thumb-2 position-absolute ">
-                        <img src="https://queenswoodcottage.com/img/assets/queenswood-restaurant%20%281%29.jpg" alt="Queenswood Restaurant">
+                    <div class="about-thumb-2 position-absolute">
+                        <img src="https://queenswoodcottage.com/img/assets/queenswood-restaurant%20%281%29.jpg" alt="Queenswood Restaurant dining area">
                     </div>
                 </div>
             </div>
@@ -773,24 +730,30 @@
                          <p class="tw-text-lg">Experience exquisite cuisine at Queenswood Restaurant, where we combine local flavors with culinary excellence. Our chefs create mouthwatering dishes using the freshest seasonal ingredients, offering a dining experience that complements your mountain getaway perfectly.</p>
                     </div>
                     <div>
-                        <div class="row">
-                            <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div class="row about-list-row">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="about-list">
                                     <ul class="d-flex flex-column">
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Western and Local Cuisine</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Fine Dining</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Wine Cellar</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Local Produce</li>
-                                        <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Farm-to-table Dining</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-5 col-lg-6 col-md-6">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="about-list">
                                     <ul class="d-flex flex-column">
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Breakfast: 7:30 AM - 10:30 AM (Daily)</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Lunch: 12:00 PM - 2:30 PM (Daily)</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Dinner: 6:00 PM - 9:00 PM (Daily)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="about-list">
+                                    <ul class="d-flex flex-column">
+                                        <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Farm-to-table Dining</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Best Mountain Restaurant 2023</li>
                                         <li class="bg-white text-heading fw-semibold d-inline-flex align-items-center tw-gap-4 tw-py-3 tw-ps-5 tw-pe-4 tw-mb-5 tw-rounded-3xl"><span class="tw-text-2xl text-main-600 lh-1 d-inline-block"><i class="ph-bold ph-seal-check"></i></span> Featured in Local Food Guide 2024</li>
                                     </ul>
@@ -803,7 +766,7 @@
         </div>
     </div>
 </section>
-    <section class="cta-area py-120 background-img position-relative z-1 tw-mx-11 tw-rounded-3xl overflow-hidden" data-background-image="https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%283%29.jpg">
+    <section class="cta-area cta-people position-relative z-1 tw-mx-11 tw-rounded-3xl overflow-hidden" style="background-image:url('https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%283%29.jpg')">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-xl-6">
@@ -1354,5 +1317,16 @@
 <!-- main js -->
 <script src="assets/js/main.js"></script>
 
+<script>
+// Rooms/amenity cards: tap an image to show its details (hover does the same on desktop)
+document.querySelectorAll('.advance-thumb').forEach(function (thumb) {
+  thumb.addEventListener('click', function (e) {
+    if (e.target.closest('a')) return;
+    var open = thumb.classList.contains('is-open');
+    document.querySelectorAll('.advance-thumb.is-open').forEach(function (t) { t.classList.remove('is-open'); });
+    if (!open) thumb.classList.add('is-open');
+  });
+});
+</script>
 </body>
 </html>

@@ -11238,3 +11238,11 @@ input:focus, input:focus-visible {
 }
 .header.fixed-header .header-button a { padding: 8px 28px !important; }
 .hero-discover { font-size: clamp(13px, 1.1vw, 20px); padding: 10px 26px !important; }
+
+/* hero slideshow: 3 cottage / garden photos, each fills the whole hero (no blur, no bars) */
+.hero-slide {
+    background-color: #000 !important;
+    background-image: var(--hero-img) !important;
+    background-size: cover !important; background-repeat: no-repeat !important;
+    background-position: var(--hero-pos, center) !important;
+}

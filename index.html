@@ -234,19 +234,17 @@
 <div id="scrollSmoother-container">
     <section class="banner-area position-relative z-1">
     <!-- Hero slideshow: room photos. Swap the URLs to change pictures. -->
+    <!-- Hero slideshow: cottage + garden photos. Swap the URLs to change pictures.
+         --hero-pos moves the crop (x y) so the cottage stays in view. -->
     <div class="hero-slides">
-        <div class="hero-slide is-active" style="background-image:url('https://queenswoodcottage.com/img/assets/him1.jpeg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/118227999.jpg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/214100295.jpg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/214101323.jpg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/439728157.jpg')"></div>
+        <div class="hero-slide is-active" style="--hero-img:url('https://queenswoodcottage.com/img/assets/him1.jpeg'); --hero-pos:center 35%"></div>
+        <div class="hero-slide" style="--hero-img:url('https://queenswoodcottage.com/img/assets/118227999.jpg'); --hero-pos:center 30%"></div>
+        <div class="hero-slide" style="--hero-img:url('../images/site/queens-wood-restaurant-3-.jpg'); --hero-pos:center 60%"></div>
     </div>
     <div class="hero-dots" role="tablist" aria-label="Hero slides">
         <button type="button" class="hero-dot is-active" aria-label="Slide 1"></button>
         <button type="button" class="hero-dot" aria-label="Slide 2"></button>
         <button type="button" class="hero-dot" aria-label="Slide 3"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 4"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 5"></button>
     </div>
     <div class="container">
         <div class="hero-copy position-relative z-2">
@@ -1288,7 +1286,7 @@ document.querySelectorAll('.advance-thumb').forEach(function (thumb) {
 // Hero slideshow with dots
 (function () {
   var slides = document.querySelectorAll('.hero-slide'), dots = document.querySelectorAll('.hero-dot'), i = 0, timer;
-  if (!slides.length) return;
+  if (slides.length < 2) return;
   function show(n) {
     slides[i].classList.remove('is-active'); dots[i].classList.remove('is-active');
     i = (n + slides.length) % slides.length;

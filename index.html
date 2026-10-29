@@ -1299,5 +1299,20 @@ document.querySelectorAll('.advance-thumb').forEach(function (thumb) {
   start();
 })();
 </script>
+<script>
+/* align Book Now + Discover Cottage with the right edge of EXPLORE MORE */
+(function () {
+    function align() {
+        var btn = document.querySelector('.checkout-area button');
+        if (!btn || window.innerWidth < 992) { document.documentElement.style.removeProperty('--edge-right'); return; }
+        var edge = document.documentElement.clientWidth - btn.getBoundingClientRect().right;
+        if (edge > 0) document.documentElement.style.setProperty('--edge-right', edge + 'px');
+    }
+    window.addEventListener('load', align);
+    window.addEventListener('resize', align);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(align);
+    align();
+})();
+</script>
 </body>
 </html>

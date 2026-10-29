@@ -28,6 +28,9 @@
     <!-- Magnific-Popup -->
     <link rel="stylesheet" href="assets/css/magnific-popup.css" >
     <!-- Main css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Oswald:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" >
   </head>
   <body class="bg-neutral-400 @@bodyClass">
@@ -232,44 +235,25 @@
     <section class="banner-area position-relative z-1">
     <!-- Hero slideshow: room photos. Swap the URLs to change pictures. -->
     <div class="hero-slides">
-        <div class="hero-slide is-active" role="img" aria-label="Superior Suite" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/6994411e9dd08.avif')"></div>
-        <div class="hero-slide" role="img" aria-label="Standard Family" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/69944942cf735.avif')"></div>
-        <div class="hero-slide" role="img" aria-label="Deluxe Double and tub" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/69944b61152c0.avif')"></div>
-        <div class="hero-slide" role="img" aria-label="Superior Family Attic" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/69944f5a8ef43.avif')"></div>
+        <div class="hero-slide is-active" style="background-image:url('https://queenswoodcottage.com/img/assets/him1.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/118227999.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/214100295.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/214101323.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/439728157.jpg')"></div>
     </div>
     <div class="hero-dots" role="tablist" aria-label="Hero slides">
         <button type="button" class="hero-dot is-active" aria-label="Slide 1"></button>
         <button type="button" class="hero-dot" aria-label="Slide 2"></button>
         <button type="button" class="hero-dot" aria-label="Slide 3"></button>
         <button type="button" class="hero-dot" aria-label="Slide 4"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 5"></button>
     </div>
     <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-xl-8 col-lg-8">
-                <div class="position-relative z-2">
-                    <h6 class="banner-subtitle tw-text-xl text-uppercase text-white tw-mb-9">A brand new experience beyond ordinary. Historic charm meets modern luxury in the heart of the countryside.</h6>
-                    <h1 class="banner-title tw-text-29 text-white fw-normal tw-mb-6 tw-char-animation">Queenswood Cottage</h1>
-                    <div class="hero-cta d-flex flex-column align-items-start tw-gap-9">
-                        <div>
-<a class="tw-btn-hover-white bg-main-600 tw-py-5 tw-px-12 text-heading font-heading d-inline-flex align-items-center tw-gap-3 tw-rounded-lg" href="#about">Discover Cottage <span class="d-inline-block lh-1 tw-text-lg"><i class="ph ph-arrow-up-right"></i></span></a>
-                        </div>
-                        <div class="">
-                            <div class="d-flex align-items-center tw-gap-2">
-                                <span class="tw-text-xl text-white font-heading">8.5/10</span>
-                                <ul class="d-flex tw-gap-1">
-                                    <li class="text-white"><i class="ph-bold ph-star"></i></li>
-                                    <li class="text-white"><i class="ph-bold ph-star"></i></li>
-                                    <li class="text-white"><i class="ph-bold ph-star"></i></li>
-                                    <li class="text-white"><i class="ph-bold ph-star"></i></li>
-                                    <li class="text-white"><i class="ph-bold ph-star"></i></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p class="tw-text-xl text-white font-heading">Booking.com traveler review awards</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero-copy position-relative z-2">
+            <h6 class="banner-subtitle">A brand new experience beyond the ordinary. Historic charm meets modern luxury in the heart of the countryside.</h6>
+            <div class="hero-title-row">
+                <h1 class="banner-title">Queenswood Cottage</h1>
+                <a class="hero-discover" href="#about">Discover Cottage <i class="ph ph-arrow-up-right"></i></a>
             </div>
         </div>
     </div>
@@ -338,6 +322,19 @@
           </div>
      </div>
 </div>
+    <section class="welcome-area position-relative z-1" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xl-11"> 
+                    <div class="welcome-block text-center tw-mb-14 tw_fade_anim">
+                         <h6 class="welcome-kicker">Welcome<br>to</h6>
+                         <h2 class="welcome-title">Queenswood Cottage</h2>
+                         <p class="welcome-text">Discover a world of comfort, luxury, and unparalleled hospitality at Queenswood Cottage. Nestled in the heart of the city, our exquisite cottage is your home away from home, where every stay is a memorable experience.</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
     <section class="py-120 position-relative z-1" id="rooms">
      <div class="container">
           <div class="row justify-content-between align-items-center">
@@ -547,17 +544,9 @@
           </div>
      </div>
 </section>
-    <div class="advance-area py-120 position-relative z-1" id="about">
+    <div class="advance-area pt-0 pb-120 position-relative z-1" id="amenity-cards">
     <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-xl-11"> 
-                    <div class="section-wrapper text-center tw-mb-14 tw_fade_anim">
-                         <h6 class="section-subtitle tw-text-xl fw-medium text-uppercase tw-mb-4 text-main-600">Welcome To Queenswood Cottage</h6>
-                         <h2 class="section-title section-title--sm fw-normal tw-mb-7 tw-char-animation">Discover a world of comfort, luxury, and unparalleled hospitality at Queenswood Cottage. Nestled in the heart of the city, our exquisite cottage is your home away from home, where every stay is a memorable experience.</h2>
-                    </div>
-               </div>
-            </div>
-            <div class="row">
+                        <div class="row">
                <div class="col-xl-12">
                   <div class="advance-wrap tw_fade_anim">
       
@@ -967,7 +956,7 @@
         </div>
     </div>
 </section>
-    <section class="cta-area cta-people position-relative z-1 tw-mx-11 tw-rounded-3xl overflow-hidden" style="background-image:url('https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%283%29.jpg')">
+    <section class="cta-area cta-restore position-relative z-1 tw-mx-11 tw-rounded-3xl overflow-hidden" style="background-size:cover;background-position:center;background-repeat:no-repeat;background-image:url('https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%283%29.jpg')">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-xl-6">
@@ -1235,7 +1224,7 @@
                           <a href="https://www.tripadvisor.com/Hotel_Review-g608524-d4323018-Reviews-Queenswood_Cottage-Nuwara_Eliya_Central_Province.html" target="_blank" rel="noopener" class="text--white tw-text-lg hover-text-main-600"><img src="https://queenswoodcottage.com/img/icons8-tripadvisor-50%20%281%29.png" alt="TripAdvisor" style="width:22px;height:22px;object-fit:contain;filter:brightness(0) invert(1);"></a>
                       </li>
                   </ul>
-                  <p class="text--white text-line-1 fw-medium tw-text-lg aos-init tw_fade_anim" data-delay=".7">© 2026 Queenswood Cottage. All rights reserved. Site made by Silicon Radon Networks (Pvt) Ltd</p>
+                  <p class="text--white text-line-1 fw-medium tw-text-lg aos-init tw_fade_anim" data-delay=".7">© 2026 All Rights Reserved | Designed &amp; Developed by Silicon Radon Networks (Pvt) Ltd</p>
                 </div>
             </div>
         </div>

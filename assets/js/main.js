@@ -318,7 +318,7 @@
     // =========================  Home 1 service Js Start ==============
       var slider = new Swiper('.service-active', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 12,
         loop: true,
         speed: 3000,
         autoplay: true,

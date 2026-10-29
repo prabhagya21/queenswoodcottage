@@ -31,12 +31,6 @@
     <link rel="stylesheet" href="assets/css/main.css" >
   </head>
   <body class="bg-neutral-400 @@bodyClass">
-<!-- turns the white box of the logo image transparent -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <filter id="qw-knockout" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
-    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -1.6 -1.6 -1.6 0 4.8"/>
-  </filter>
-</svg>
 
 
 
@@ -156,7 +150,7 @@
 
     <div class="mobile-menu__inner">
         <a href="index.html" class="mobile-menu__logo">
-            <img src="https://queenswoodcottage.com/img/assets/logo-black%20%281%29.webp" alt="Queenswood Cottage">
+            <img src="assets/images/logo/queenswood-logo.png" alt="Queenswood Cottage">
         </a>
         <div class="mobile-menu__menu">
             <!-- Nav menu Start -->
@@ -190,7 +184,7 @@
             <!-- Logo Start -->
             <div class="logo">
                 <a href="index.html" class="link">
-                    <img src="https://queenswoodcottage.com/img/assets/logo-black%20%281%29.webp" alt="Queenswood Cottage" class="max-w-200-px">
+                    <img src="assets/images/logo/queenswood-logo.png" alt="Queenswood Cottage" class="max-w-200-px">
                 </a>
             </div>
             <!-- Logo End  -->
@@ -221,14 +215,6 @@
 
             <!-- Header Right start -->
             <div class="header-right d-flex tw-gap-28">
-                <div class="header-btn-wrap d-flex align-items-center tw-gap-5">
-                    <div>
-                        <button class="text-white">
-                            <span><img src="assets/images/icons/cart.svg" alt="cart"></span>
-                        </button>
-                    </div>
-                </div>
-
                 <div class="header-button">
                     <a class="tw-btn-hover-yellow bg-white tw-py-5 tw-px-7 text-uppercase text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <span class="d-inline-block lh-1 tw-text-lg"><i class="ph ph-arrow-up-right"></i></span></a>
                 </div>
@@ -244,22 +230,28 @@
 <!-- ==================== Header End Here ==================== -->
 <div id="scrollSmoother-container">
     <section class="banner-area position-relative z-1">
-    <!-- Hero slideshow (4 images). Change the URLs below to swap pictures. -->
-    <div class="hero-slides" aria-hidden="true">
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/him1.jpeg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/118227999.jpg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/214100295.jpg')"></div>
-        <div class="hero-slide" style="background-image:url('https://queenswoodcottage.com/img/assets/809106812.jpg')"></div>
+    <!-- Hero slideshow: room photos. Swap the URLs to change pictures. -->
+    <div class="hero-slides">
+        <div class="hero-slide is-active" role="img" aria-label="Superior Suite" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/6994411e9dd08.avif')"></div>
+        <div class="hero-slide" role="img" aria-label="Standard Family" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/69944942cf735.avif')"></div>
+        <div class="hero-slide" role="img" aria-label="Deluxe Double and tub" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/69944b61152c0.avif')"></div>
+        <div class="hero-slide" role="img" aria-label="Superior Family Attic" style="background-image:url('https://queenswoodcottage.com/uploads/rooms/thumbs/69944f5a8ef43.avif')"></div>
+    </div>
+    <div class="hero-dots" role="tablist" aria-label="Hero slides">
+        <button type="button" class="hero-dot is-active" aria-label="Slide 1"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 2"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 3"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 4"></button>
     </div>
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-xl-8 col-lg-8">
                 <div class="position-relative z-2">
                     <h6 class="banner-subtitle tw-text-xl text-uppercase text-white tw-mb-9">A brand new experience beyond ordinary. Historic charm meets modern luxury in the heart of the countryside.</h6>
-                    <h1 class="banner-title tw-text-29 text-white fw-normal tw-mb-10 tw-char-animation">Queenswood Cottage</h1>
-                    <div class="d-flex align-items-center flex-wrap row-gap-3 tw-gap-13">
+                    <h1 class="banner-title tw-text-29 text-white fw-normal tw-mb-6 tw-char-animation">Queenswood Cottage</h1>
+                    <div class="hero-cta d-flex flex-column align-items-start tw-gap-9">
                         <div>
-                            <a class="tw-btn-hover-white bg-main-600 tw-py-5 tw-px-12 text-heading font-heading d-inline-flex align-items-center tw-gap-3 tw-rounded-lg" href="#about">Discover Cottage <span class="d-inline-block lh-1 tw-text-lg"><i class="ph ph-arrow-up-right"></i></span></a>
+<a class="tw-btn-hover-white bg-main-600 tw-py-5 tw-px-12 text-heading font-heading d-inline-flex align-items-center tw-gap-3 tw-rounded-lg" href="#about">Discover Cottage <span class="d-inline-block lh-1 tw-text-lg"><i class="ph ph-arrow-up-right"></i></span></a>
                         </div>
                         <div class="">
                             <div class="d-flex align-items-center tw-gap-2">
@@ -346,6 +338,215 @@
           </div>
      </div>
 </div>
+    <section class="py-120 position-relative z-1" id="rooms">
+     <div class="container">
+          <div class="row justify-content-between align-items-center">
+               <div class="col-xl-8 col-lg-8"> 
+                    <div class="section-wrapper tw-mb-14 tw_fade_anim" data-delay=".3">
+                         <h6 class="section-subtitle tw-text-xl fw-medium text-uppercase tw-mb-4 text-main-600">Queenswood Cottage</h6>
+                         <h2 class="section-title fw-normal tw-mb-7 tw-char-animation">Our Rooms</h2>
+                    </div>
+               </div>
+               <div class="col-xl-4 col-lg-4">
+                    <div class="service-top-button tw_fade_anim" data-delay=".5">
+                         <a class="tw-btn-hover-black bg-main-600 tw-py-5 tw-px-12 text-uppercase text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">Book Now <span class="d-inline-block lh-1 tw-text-lg"><i class="ph ph-arrow-up-right"></i></span></a>
+                    </div>
+               </div>
+          </div>
+          <div class="row">
+               <div class="col-xl-12">
+                    <div class="service-slider tw_fade_anim">
+                         <div class="service-active swiper-container">
+                              <div class="swiper-wrapper">
+
+                                   
+                                   <!-- slide 1 -->
+                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
+                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
+                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/6994411e9dd08.avif" alt="Superior Suite"></a>
+                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
+                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
+                                             </div>
+                                        </div>
+                                        <div class="service-content tw-px-2 tw-mb-2">
+                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
+                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Superior Suite</a></h4>
+                                             <p class="service-paragraph tw-mb-5">A spacious suite with a separate living area, perfect for those seeking extra comfort and luxury.</p>
+                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
+                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
+                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
+                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                                       <div class="service-price">
+                                                            <h6 class="fw-normal">$180</h6>
+                                                            <p>/ night</p>
+                                                       </div>
+                                                       <div>
+                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- slide 2 -->
+                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
+                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
+                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69944942cf735.avif" alt="Standard Family"></a>
+                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
+                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
+                                             </div>
+                                        </div>
+                                        <div class="service-content tw-px-2 tw-mb-2">
+                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
+                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Standard Family</a></h4>
+                                             <p class="service-paragraph tw-mb-5">Comfortable family accommodation with ample space and essential amenities.</p>
+                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
+                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
+                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
+                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                                       <div class="service-price">
+                                                            <h6 class="fw-normal">$100</h6>
+                                                            <p>/ night</p>
+                                                       </div>
+                                                       <div>
+                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- slide 3 -->
+                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
+                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
+                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69943789f1a9a.avif" alt="Standard Double"></a>
+                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
+                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
+                                             </div>
+                                        </div>
+                                        <div class="service-content tw-px-2 tw-mb-2">
+                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
+                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Standard Double</a></h4>
+                                             <p class="service-paragraph tw-mb-5">Cozy double room with comfortable bedding and all necessary facilities for a relaxing night’s sleep.</p>
+                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
+                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
+                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
+                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                                       <div class="service-price">
+                                                            <h6 class="fw-normal">$65</h6>
+                                                            <p>/ night</p>
+                                                       </div>
+                                                       <div>
+                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   
+                                   <!-- slide 1 -->
+                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
+                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
+                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69944b61152c0.avif" alt="Deluxe Double and tub"></a>
+                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
+                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
+                                             </div>
+                                        </div>
+                                        <div class="service-content tw-px-2 tw-mb-2">
+                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
+                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Deluxe Double and tub</a></h4>
+                                             <p class="service-paragraph tw-mb-5">Elegant double room with a luxurious bathtub, perfect for special occasions.</p>
+                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
+                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
+                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
+                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                                       <div class="service-price">
+                                                            <h6 class="fw-normal">$95</h6>
+                                                            <p>/ night</p>
+                                                       </div>
+                                                       <div>
+                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- slide 2 -->
+                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
+                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
+                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69944f5a8ef43.avif" alt="Superior Family Attic with Balcony"></a>
+                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
+                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
+                                             </div>
+                                        </div>
+                                        <div class="service-content tw-px-2 tw-mb-2">
+                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
+                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Superior Family Attic with Balcony</a></h4>
+                                             <p class="service-paragraph tw-mb-5">Spacious attic room with a private balcony, ideal for families wanting extra room and outdoor space.</p>
+                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
+                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
+                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
+                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                                       <div class="service-price">
+                                                            <h6 class="fw-normal">$128</h6>
+                                                            <p>/ night</p>
+                                                       </div>
+                                                       <div>
+                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- slide 3 -->
+                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
+                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
+                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/699453c6a10f1.avif" alt="Deluxe Family Attic with Balcony"></a>
+                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
+                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
+                                             </div>
+                                        </div>
+                                        <div class="service-content tw-px-2 tw-mb-2">
+                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
+                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Deluxe Family Attic with Balcony</a></h4>
+                                             <p class="service-paragraph tw-mb-5">Premium attic accommodation with balcony access, offering stunning views and luxurious amenities.</p>
+                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
+                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
+                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
+                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                                       <div class="service-price">
+                                                            <h6 class="fw-normal">$125</h6>
+                                                            <p>/ night</p>
+                                                       </div>
+                                                       <div>
+                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
     <div class="advance-area py-120 position-relative z-1" id="about">
     <div class="container">
             <div class="row justify-content-center">
@@ -435,45 +636,39 @@
                 </div>
            </div>
         </div>
-        <div class="row">
+        <div class="row follow-row">
             <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="offer-wrapper overflow-hidden tw-mb-7 tw_fade_anim" data-delay=".3">
-                    <div class="position-relative z-1">
-                        <a href="https://www.facebook.com/share/v/1HvGYerJZa/" target="_blank" rel="noopener"><img src="https://queenswoodcottage.com/img/assets/118227999.jpg" alt="Mountain Views"></a>
-                        <div class="offer-title">
-                            <h4 class="offer-title-inner tw-text-8 fw-normal">Mountain Views</h4>
-                        </div>
-                        <div class="offer-tag">
-                            <span class="bg-main-600 text-heading fw-medium">Facebook</span>
-                        </div>
-                    </div>
-                </div>
+                <a class="follow-card tw_fade_anim" href="https://www.facebook.com/share/v/1HvGYerJZa/" target="_blank" rel="noopener">
+                    <img src="https://queenswoodcottage.com/img/assets/bike.jpg" alt="Mountain Views">
+                    <span class="follow-tag"><i class="ph-bold ph-facebook-logo"></i> Facebook</span>
+                    <span class="follow-body">
+                        <h4>Mountain Views</h4>
+                        <p>Scenic trails and misty hills around the cottage</p>
+                        <span class="follow-link">Watch now <i class="ph ph-arrow-up-right"></i></span>
+                    </span>
+                </a>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="offer-wrapper active overflow-hidden tw-mb-7 tw_fade_anim" data-delay=".5">
-                    <div class="position-relative z-1">
-                        <a href="https://www.facebook.com/share/v/1AafDVpzuY/" target="_blank" rel="noopener"><img src="https://queenswoodcottage.com/img/assets/214100295.jpg" alt="Cottage Tour"></a>
-                        <div class="offer-title">
-                            <h4 class="offer-title-inner tw-text-8 fw-normal">Cottage Tour</h4>
-                        </div>
-                        <div class="offer-tag">
-                            <span class="bg-main-600 text-heading fw-medium">Facebook</span>
-                        </div>
-                    </div>
-                </div>
+                <a class="follow-card tw_fade_anim" href="https://www.facebook.com/share/v/1AafDVpzuY/" target="_blank" rel="noopener">
+                    <img src="https://queenswoodcottage.com/img/assets/809106812.jpg" alt="Cottage Tour">
+                    <span class="follow-tag"><i class="ph-bold ph-facebook-logo"></i> Facebook</span>
+                    <span class="follow-body">
+                        <h4>Cottage Tour</h4>
+                        <p>Walk through our cosy wooden cottage rooms</p>
+                        <span class="follow-link">Watch now <i class="ph ph-arrow-up-right"></i></span>
+                    </span>
+                </a>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="offer-wrapper overflow-hidden tw-mb-7 tw_fade_anim" data-delay=".7">
-                    <div class="position-relative z-1">
-                        <a href="https://www.facebook.com/share/r/1Dc2hwoSed/" target="_blank" rel="noopener"><img src="https://queenswoodcottage.com/img/assets/214101323.jpg" alt="Winter Activities"></a>
-                        <div class="offer-title">
-                            <h4 class="offer-title-inner tw-text-8 fw-normal">Winter Activities</h4>
-                        </div>
-                        <div class="offer-tag">
-                            <span class="bg-main-600 text-heading fw-medium">Facebook</span>
-                        </div>
-                    </div>
-                </div>
+                <a class="follow-card tw_fade_anim" href="https://www.facebook.com/share/r/1Dc2hwoSed/" target="_blank" rel="noopener">
+                    <img src="https://queenswoodcottage.com/img/assets/809106415.jpg" alt="Winter Activities">
+                    <span class="follow-tag"><i class="ph-bold ph-facebook-logo"></i> Facebook</span>
+                    <span class="follow-body">
+                        <h4>Winter Activities</h4>
+                        <p>Stay warm and enjoy the hill country winter</p>
+                        <span class="follow-link">Watch now <i class="ph ph-arrow-up-right"></i></span>
+                    </span>
+                </a>
             </div>
         </div>
     </div>
@@ -493,7 +688,7 @@
                 <div class="feature-wrapper d-flex align-items-center tw-gap-7 tw_fade_anim">
 
                     <!-- Item 1 -->
-                    <div class="feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
+                    <div style="--feature-img:url('https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%282%29.jpg')" class="feature-photo feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
                         <div class="feature-icon tw-mb-15">
                             <span class="tw-h-26"><img class="tw-transition" src="assets/images/icons/feature-icon1.svg" alt="icon"></span>
                         </div>
@@ -503,7 +698,7 @@
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
+                    <div style="--feature-img:url('https://queenswoodcottage.com/img/assets/117997196.jpg')" class="feature-photo feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
                         <div class="feature-icon tw-mb-15">
                             <span class="tw-h-26"><img class="tw-transition" src="assets/images/icons/feature-icon2.svg" alt="icon"></span>
                         </div>
@@ -513,7 +708,7 @@
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="feature-item active bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
+                    <div style="--feature-img:url('https://queenswoodcottage.com/img/assets/queenswood-restaurant%20%281%29.jpg')" class="feature-photo feature-item active bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
                         <div class="feature-icon tw-mb-15">
                             <span class="tw-h-26"><img class="tw-transition" src="assets/images/icons/feature-icon3.svg" alt="icon"></span>
                         </div>
@@ -523,7 +718,7 @@
                     </div>
 
                     <!-- Item 4 -->
-                    <div class="feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
+                    <div style="--feature-img:url('https://queenswoodcottage.com/img/assets/s4.jpg')" class="feature-photo feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
                         <div class="feature-icon tw-mb-15">
                             <span class="tw-h-26"><img class="tw-transition" src="assets/images/icons/feature-icon4.svg" alt="icon"></span>
                         </div>
@@ -533,7 +728,7 @@
                     </div>
 
                     <!-- Item 5 -->
-                    <div class="feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
+                    <div style="--feature-img:url('https://queenswoodcottage.com/img/assets/queens-wood-restaurant%20%283%29.jpg')" class="feature-photo feature-item bg-white tw-rounded-xl tw-p-8 tw-pt-14 tw-pe-20 border border-neutral">
                         <div class="feature-icon tw-mb-15">
                             <span class="tw-h-26"><img class="tw-transition" src="assets/images/icons/feature-icon5.svg" alt="icon"></span>
                         </div>
@@ -788,215 +983,6 @@
         </div>
     </div>
 </section>
-    <section class="py-120 position-relative z-1" id="rooms">
-     <div class="container">
-          <div class="row justify-content-between align-items-center">
-               <div class="col-xl-8 col-lg-8"> 
-                    <div class="section-wrapper tw-mb-14 tw_fade_anim" data-delay=".3">
-                         <h6 class="section-subtitle tw-text-xl fw-medium text-uppercase tw-mb-4 text-main-600">Queenswood Cottage</h6>
-                         <h2 class="section-title fw-normal tw-mb-7 tw-char-animation">Our Rooms</h2>
-                    </div>
-               </div>
-               <div class="col-xl-4 col-lg-4">
-                    <div class="service-top-button tw_fade_anim" data-delay=".5">
-                         <a class="tw-btn-hover-black bg-main-600 tw-py-5 tw-px-12 text-uppercase text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">Book Now <span class="d-inline-block lh-1 tw-text-lg"><i class="ph ph-arrow-up-right"></i></span></a>
-                    </div>
-               </div>
-          </div>
-          <div class="row">
-               <div class="col-xl-12">
-                    <div class="service-slider tw_fade_anim">
-                         <div class="service-active swiper-container">
-                              <div class="swiper-wrapper">
-
-                                   
-                                   <!-- slide 1 -->
-                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
-                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
-                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/6994411e9dd08.avif" alt="Superior Suite"></a>
-                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
-                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
-                                             </div>
-                                        </div>
-                                        <div class="service-content tw-px-2 tw-mb-2">
-                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
-                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Superior Suite</a></h4>
-                                             <p class="service-paragraph tw-mb-5">A spacious suite with a separate living area, perfect for those seeking extra comfort and luxury.</p>
-                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
-                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
-                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
-                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
-                                                  </div>
-                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                                                       <div class="service-price">
-                                                            <h6 class="fw-normal">$180</h6>
-                                                            <p>/ night</p>
-                                                       </div>
-                                                       <div>
-                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                                   <!-- slide 2 -->
-                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
-                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
-                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69944942cf735.avif" alt="Standard Family"></a>
-                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
-                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
-                                             </div>
-                                        </div>
-                                        <div class="service-content tw-px-2 tw-mb-2">
-                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
-                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Standard Family</a></h4>
-                                             <p class="service-paragraph tw-mb-5">Comfortable family accommodation with ample space and essential amenities.</p>
-                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
-                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
-                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
-                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
-                                                  </div>
-                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                                                       <div class="service-price">
-                                                            <h6 class="fw-normal">$100</h6>
-                                                            <p>/ night</p>
-                                                       </div>
-                                                       <div>
-                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                                   <!-- slide 3 -->
-                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
-                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
-                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69943789f1a9a.avif" alt="Standard Double"></a>
-                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
-                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
-                                             </div>
-                                        </div>
-                                        <div class="service-content tw-px-2 tw-mb-2">
-                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
-                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Standard Double</a></h4>
-                                             <p class="service-paragraph tw-mb-5">Cozy double room with comfortable bedding and all necessary facilities for a relaxing night’s sleep.</p>
-                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
-                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
-                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
-                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
-                                                  </div>
-                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                                                       <div class="service-price">
-                                                            <h6 class="fw-normal">$65</h6>
-                                                            <p>/ night</p>
-                                                       </div>
-                                                       <div>
-                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                   </div>
-                                   
-                                   <!-- slide 1 -->
-                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
-                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
-                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69944b61152c0.avif" alt="Deluxe Double and tub"></a>
-                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
-                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
-                                             </div>
-                                        </div>
-                                        <div class="service-content tw-px-2 tw-mb-2">
-                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
-                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Deluxe Double and tub</a></h4>
-                                             <p class="service-paragraph tw-mb-5">Elegant double room with a luxurious bathtub, perfect for special occasions.</p>
-                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
-                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
-                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
-                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
-                                                  </div>
-                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                                                       <div class="service-price">
-                                                            <h6 class="fw-normal">$95</h6>
-                                                            <p>/ night</p>
-                                                       </div>
-                                                       <div>
-                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                                   <!-- slide 2 -->
-                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
-                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
-                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/69944f5a8ef43.avif" alt="Superior Family Attic with Balcony"></a>
-                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
-                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
-                                             </div>
-                                        </div>
-                                        <div class="service-content tw-px-2 tw-mb-2">
-                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
-                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Superior Family Attic with Balcony</a></h4>
-                                             <p class="service-paragraph tw-mb-5">Spacious attic room with a private balcony, ideal for families wanting extra room and outdoor space.</p>
-                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
-                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
-                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
-                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
-                                                  </div>
-                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                                                       <div class="service-price">
-                                                            <h6 class="fw-normal">$128</h6>
-                                                            <p>/ night</p>
-                                                       </div>
-                                                       <div>
-                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                                   <!-- slide 3 -->
-                                   <div class="service-wrapper bg-white tw-p-4 tw-rounded-xl tw-mb-8 swiper-slide">
-                                        <div class="service-thumb tw-mb-5 position-relative z-1 overflow-hidden">
-                                             <a href="#"><img class="tw-rounded-xl w-100 h-100 object-fit-cover hover-scale-2 tw-duration-500" src="https://queenswoodcottage.com/uploads/rooms/thumbs/699453c6a10f1.avif" alt="Deluxe Family Attic with Balcony"></a>
-                                             <div class="service-tag position-absolute start-0 top-0 tw-mt-2 tw-ms-2">
-                                                  <a class="bg-white text-heading tw-py-1 tw-px-5 tw-rounded-lg tw-text-lg text-capitalize" href="#">Luxury Room</a>
-                                             </div>
-                                        </div>
-                                        <div class="service-content tw-px-2 tw-mb-2">
-                                             <span class="service-location"><i class="ph ph-map-pin"></i> Nuwara Eliya, Sri Lanka</span>
-                                             <h4 class="service-title tw-text-8 fw-normal text-capitalize tw-mb-2"><a class="hover-text-secondary" href="#">Deluxe Family Attic with Balcony</a></h4>
-                                             <p class="service-paragraph tw-mb-5">Premium attic accommodation with balcony access, offering stunning views and luxurious amenities.</p>
-                                             <div class="service-wrap tw-rounded-xl tw-py-4 tw-px-6">
-                                                  <div class="service-star d-flex tw-gap-6 tw-pb-4 tw-mb-6">
-                                                       <span class="text-heading fw-normal d-flex tw-gap-2"><i class="ph ph-star"></i> 8.5/10</span>
-                                                       <span class="text-heading fw-normal">Free Wi-Fi</span>
-                                                  </div>
-                                                  <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                                                       <div class="service-price">
-                                                            <h6 class="fw-normal">$125</h6>
-                                                            <p>/ night</p>
-                                                       </div>
-                                                       <div>
-                                                            <a class="font-heading tw-text-sm text-uppercase text-heading fw-normal hover-text-main-600" href="https://booking-directly.com/widgets/OWYa2sQrjNyOXOBs1mZhBAbJc88lf2Fs6nyXePcxVHcw3cIrUoP91L4DktdjK/properties/unit-selection?search_stay_dates=%7B%22checkInDate%22%3A%222026-02-11%22%2C%22checkOutDate%22%3A%222026-02-12%22%7D&amp;search_occupancies=%5B%7B%22numberOfAdults%22%3A3%2C%22children%22%3A%5B%5D%7D%5D" target="_blank" rel="noopener">BOOK NOW <i class="tw-text-base ph ph-arrow-up-right"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </div>
-</section>
     
     <section class="testimonial-area testimonial-panel-area py-120 position-relative z-1">
     <div class="container">
@@ -1135,36 +1121,7 @@
 
 
 
-    <div class="overflow-hidden tw-pb-10">
-   <div class="marquee">
-      <div class="d-inline-flex align-items-center tw-gap-14">
-         <div class="marquee-icon">
-            <span><img src="assets/images/icons/marquee-icon1.svg" alt="marquee"></span>
-         </div>
-         <div>
-            <h2 class="marquee-title fw-normal">Queenswood Cottage</h2>
-         </div>
-      </div>
-      <div class="d-inline-flex align-items-center tw-gap-14">
-         <div class="marquee-icon">
-            <span><img src="assets/images/icons/marquee-icon1.svg" alt="marquee"></span>
-         </div>
-         <div>
-            <h2 class="marquee-title fw-normal">Queenswood Cottage</h2>
-         </div>
-      </div>
-   </div>
-</div>
-    
-    
-
-
-
-
-
-
-
-    <!-- ==================== Footer Start Here ==================== -->
+<!-- ==================== Footer Start Here ==================== -->
 <footer class="footer background-img position-relative z-1 overflow-hidden " data-background-image="assets/images/thumbs/footer-bg.jpg">
     <div class="container">
       <div class="row justify-content-center">
@@ -1264,7 +1221,7 @@
                 <div class="footer-bottom-wrap d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
                   <div class="mb-0 aos-init tw_fade_anim" data-delay=".3">
                       <a href="index.html" class="">
-                          <img src="https://queenswoodcottage.com/img/assets/logo-black%20%281%29.webp" alt="Queenswood Cottage">
+                          <img src="assets/images/logo/queenswood-logo.png" alt="Queenswood Cottage">
                       </a>
                   </div>
                   <ul class="footer-bottom-social d-flex align-items-center tw-gap-6 aos-init tw_fade_anim" data-delay=".5">
@@ -1337,6 +1294,21 @@ document.querySelectorAll('.advance-thumb').forEach(function (thumb) {
     if (!open) thumb.classList.add('is-open');
   });
 });
+</script>
+<script>
+// Hero slideshow with dots
+(function () {
+  var slides = document.querySelectorAll('.hero-slide'), dots = document.querySelectorAll('.hero-dot'), i = 0, timer;
+  if (!slides.length) return;
+  function show(n) {
+    slides[i].classList.remove('is-active'); dots[i].classList.remove('is-active');
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add('is-active'); dots[i].classList.add('is-active');
+  }
+  function start() { clearInterval(timer); timer = setInterval(function () { show(i + 1); }, 5000); }
+  dots.forEach(function (d, n) { d.addEventListener('click', function () { show(n); start(); }); });
+  start();
+})();
 </script>
 </body>
 </html>
